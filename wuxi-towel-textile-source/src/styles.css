@@ -74,14 +74,19 @@ section[data-component]{scroll-margin-top:120px}
 .header-main .container{display:flex;align-items:center;justify-content:space-between;gap:16px;min-height:68px}
 .brand{display:inline-flex;align-items:center;gap:10px}
 .brand-mark {
-    width: 40px;
-    height: 40px;
-    background-image: url('/assets/images/logo.png');
+    width: 150px;           /* 1. 强制加宽容器 */
+    height: 50px;           /* 2. 强制加高容器 */
+    background-image: url('/assets/images/logo.png'); /* 确认文件名是否正确 */
     background-size: contain;
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: left center;
     border-radius: 0;
     flex: none;
+    
+    /* 3. 关键：隐藏那个“井”字 */
+    color: transparent !important; 
+    font-size: 0 !important;
+    line-height: 0 !important;
 }
 .brand-name{font-size:15px;font-weight:600;letter-spacing:.02em;line-height:1.15}
 .brand-sub{display:block;font-size:10px;font-weight:500;color:var(--muted);letter-spacing:.14em;text-transform:uppercase;margin-top:2px}
