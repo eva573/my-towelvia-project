@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "siteId": "wuxi-towel-textile-ee3fbd20",
+  "name": "wuxi-towel-textile",
+  "kind": "react-vite",
+  "devCommand": "vite",
+  "buildCommand": "vite build",
+  "outputDir": "dist",
+  "entry": "index.html",
+  "databaseUrl": "",
+  "createdBy": "accio-site-builder",
+  "createdAt": "2026-09-04T11:40:24.659Z"
+}
